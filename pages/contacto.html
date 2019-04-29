@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/contacto.css">
     <title>T-REZ</title>
 </head>
 
@@ -20,7 +20,7 @@
             <input type="checkbox" id="nav-check">
             <section class="nav-header">
                 <div class="nav-logo">
-                    <a href=""><img src="./img/logo.png" alt="logo T-REZ"></a>
+                    <a href="../index.html"><img src="../img/logo.png" alt="logo T-REZ"></a>
                 </div>
             </section>
             <div class="nav-btn dots">
@@ -28,19 +28,19 @@
             </div>
             <section class="nav-links">
                 <article class="linksPrincipales">
-                    <a href="./pages/nosotros.html">Nosotros</a>
-                    <a href="./pages/profesionales.html">Profesionales</a>
-                    <a href="./pages/servicios.html">Servicios</a>
-                    <a href="./pages/industrias.html">Industrias</a>
-                    <a href="./pages/presencia.html">Presencia</a>
-                    <a href="./pages/recursos.html">Recursos</a>
-                    <a href="./pages/contacto.html">Contacto</a>
+                    <a href="./nosotros.html">Nosotros</a>
+                    <a href="./profesionales.html">Profesionales</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./industrias.html">Industrias</a>
+                    <a href="./presencia.html">Presencia</a>
+                    <a href="./recursos.html">Recursos</a>
+                    <a class="selectedNavItem" href="./contacto.html">Contacto</a>
                 </article>
             </section>
             <section class="buscarylinks">
                 <article class="groupinput">
                     <input type="text">
-                    <img src="./img/search.png" alt="img search">
+                    <img src="../img/search.png" alt="img search">
                 </article>
                 <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
                 <a href=""><i class="fab fa-twitter fa-2x"></i></a>
@@ -50,8 +50,8 @@
             <section class="containerSec">
 
                 <article class="linksSecundarios">
-                    <a href="./pages/servicios.html">Remedios Comerciales</a>
-                    <a href="./pages/servicios2.html">Controversias Comerciales</a>
+                    <a href="./servicios.html">Remedios Comerciales</a>
+                    <a href="./servicios2.html">Controversias Comerciales</a>
                     <a href="./pages/servicios.html">Litigios Antidumping</a>
                     <a href="./pages/industrias.html">Análisis Económicos</a>
                     <a href="./pages/presencia.html">Monitoreo Comercial estratégico</a>
@@ -61,13 +61,23 @@
         </header>
     </div>
 
-    <main>
-        <img src="./img/foto1.png" alt="imagen gigante">
-    </main>
+    <div class="preventMain">
+        <main>
+           <div class="seccionUp">
+                <p><b>Torre Siglum Insurgentes Sur #1898 Piso 14 Despacho 1421 Col. Florida 01020 CDMX, México</b></p>
+                <p>(55) 9171-1027/52</p>
+                <a href="mailto:trez@t-rezconsulting.com">trez@t-rezconsulting.com</a>
+           </div>
+           <div class="seccionDown">
+               <img src="../img/foto3.png" alt="foto contacto">
+           </div>
+        </main>
+    </div>
+
     <footer class="footerWeb">
         <section class="designedby">
             <p>Designed By</p>
-            <img src="./img/soma.png" alt="logo soma">
+            <img src="../img/soma.png" alt="logo soma">
         </section>
         <section class="direccion">
             <p>Torre Siglum Insurgentes Sur #1898 Piso 14 Despacho 1421</p>
@@ -81,7 +91,7 @@
     <footer class="footerResponsive">
         <section class="designedby">
             <p>Designed By</p>
-            <img src="./img/soma.png" alt="logo soma">
+            <img src="../img/soma.png" alt="logo soma">
         </section>
         <section class="contacto">
             <p>(55) 9171-1027/52</p>
@@ -94,6 +104,9 @@
             <p>Col. Florida 01020 CDMX, México</p>
         </section>
     </footer>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=145799399704791&autoLogAppEvents=1"></script>
 </body>
 
 </html>
