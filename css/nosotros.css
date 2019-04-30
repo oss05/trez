@@ -204,7 +204,7 @@ main {
 }
 
 .seccionIzq{
-    animation: ltr 1s forwards 0s linear;
+    animation: ltr 1s forwards 0s ease;
 }
 
 .item1 {
@@ -269,7 +269,7 @@ main {
 }
 
 .seccionCentro{
-    animation: dtu 1s forwards 0s linear;
+    animation: dtu 1s forwards 0s ease-in-out;
 }
 
 .title {
@@ -305,7 +305,7 @@ main {
 }
 
 .seccionDer{
-    animation: rtl 1s forwards 0s linear;
+    animation: rtl 1s forwards 0s ease;
 }
 
 .prueba {
