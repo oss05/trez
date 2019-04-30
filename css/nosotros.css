@@ -365,11 +365,6 @@ main {
     text-decoration: none;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-}
-
 .footerResponsive {
     display: none;
 }
