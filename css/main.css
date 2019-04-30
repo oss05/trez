@@ -23,6 +23,21 @@ body {
     justify-content: center;
 }
 
+@keyframes righttoleft{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        opacity: 1;
+        }
+}
+
+.nav{
+    animation: righttoleft 1s forwards 0s linear;
+}
+
 .nav>.nav-header {
     /* border: solid 1px blue; */
     width: 10%;
@@ -174,6 +189,19 @@ main {
     margin-top: 1em;
 }
 
+@keyframes lefttoright{
+    0%{
+        transform: translateX(-100%);
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
+}
+
+main{
+    animation: lefttoright 1s forwards 0s linear;
+}
+
 main img {
     width: 100%;
 }
@@ -229,6 +257,10 @@ main img {
 .contacto a {
     color: #fff;
     text-decoration: none;
+}
+
+footer{
+    animation: righttoleft 1s forwards 0s linear;
 }
 
 .footerResponsive {
@@ -474,7 +506,7 @@ main img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 100%; 
     }
     .contacto a {
         color: #fff;
