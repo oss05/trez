@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
     margin: 0px;
+    height: 100%;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -172,6 +173,13 @@ body {
 
 /* ---------------------empieza main---------------- */
 
+/* .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    } */
+
 .preventMain {
     /* border: solid 1px #00d0ff; */
     width: 100%;
@@ -236,6 +244,7 @@ main {
 .contenedorFotoIzq img {
     /* border: solid 1px purple; */
     width: 100%;
+    height: 15em;
 }
 
 .seccionCentro {
@@ -262,7 +271,7 @@ main {
     height: 12em;
 }
 
-.fotoProfesional img{
+.fotoProfesional img {
     width: 100%;
     height: 100%;
 }
@@ -290,13 +299,12 @@ main {
     width: 20%;
 }
 
-.prueba {
-    height: 4em;
-}
-
 /* ----------termina main----------------- */
 
 /* -----------------empieza footer-------------------------- */
+.footer, .push {
+    height: 4em;
+    }
 
 .footerWeb {
     background-color: #595a5c;
@@ -305,9 +313,7 @@ main {
     justify-content: space-around;
     color: #fff;
     height: 8em;
-    margin-top: 2em;
-    /* position: fixed;
-    bottom: 0; */
+    /* margin-top: 2em; */
 }
 
 .designedby {
@@ -352,6 +358,11 @@ main {
 }
 
 /* ------------------empieza responsive moviles-------------------- */
+@media (min-width:1700px) {
+    .footerWeb{
+    position: fixed;
+    bottom: 0;}
+}
 
 @media (max-width:700px) {
     .nav {
@@ -600,18 +611,15 @@ main {
         flex-direction: column;
         align-items: center;
     }
-    
     .fotoProfesional {
         /* border: solid 1px green; */
         width: 11em;
         height: 12em;
     }
-    
-    .fotoProfesional img{
+    .fotoProfesional img {
         width: 100%;
         height: 100%;
     }
-    
     .contactoProfesional {
         /* border: solid 1px red; */
         display: flex;
@@ -620,7 +628,6 @@ main {
         align-items: center;
         text-align: center;
     }
-    
     .contactoProfesional>a {
         color: #6c6968;
         font-size: 1.5em;
@@ -731,14 +738,11 @@ main {
         display: flex;
         text-align: center;
     }
-
     /* ------------main-------------------------- */
-
-    .item1{
+    .item1 {
         height: auto;
     }
-
-    .item1{
+    .item1 {
         height: auto;
     }
 }
