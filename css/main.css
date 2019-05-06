@@ -23,6 +23,21 @@ body {
     justify-content: center;
 }
 
+@keyframes righttoleft{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        opacity: 1;
+        }
+}
+
+.nav{
+    animation: righttoleft 1s forwards 0s linear;
+}
+
 .nav>.nav-header {
     /* border: solid 1px blue; */
     width: 10%;
@@ -170,13 +185,70 @@ body {
 main {
     /* border: solid 1px rgb(0, 208, 255); */
     width: 100%;
-    height: auto;
+    height: 75vh;
     margin-top: 1em;
+    background-image: url('../img/mainbg.png');
+    animation: lefttoright 1s forwards 0s linear;
+    background-size: cover;
+    padding-top: 4em;
 }
 
-main img {
-    width: 100%;
+@keyframes lefttoright{
+    0%{
+        transform: translateX(-100%);
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
 }
+
+.pleca1{
+    /* border: solid 1px red; */
+    width: 55%;
+    height: 4em;
+    background-color: #595a5c;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2em;
+    animation: plecaanim 1.5s forwards 1 linear;
+}
+
+.pleca1 p{
+    font-size: 40px;
+}
+
+@keyframes plecaanim{
+    0%{
+        transform: translateX(-100%);
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
+}
+
+
+.pleca2{
+    /* border: solid 1px red; */
+    width: 50%;
+    height: 5em;
+    background-color: #595a5c;
+    color: white;
+    font-size: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2em;
+    padding: 1em;
+    margin-top: 2em;
+    animation: plecaanim 1.5s forwards 1 linear;
+}
+
+.pleca2 p{
+    font-size: 40px;
+}
+
 
 /* ----------termina main----------------- */
 
@@ -231,11 +303,20 @@ main img {
     text-decoration: none;
 }
 
+footer{
+    animation: righttoleft 1s forwards 0s linear;
+}
+
 .footerResponsive {
     display: none;
 }
 
 /* ------------------empieza responsive moviles-------------------- */
+/* @media (min-width:1700px) {
+    .footerWeb{
+    position: fixed;
+    bottom: 0;}
+} */
 
 @media (max-width:700px) {
     .nav {
@@ -474,7 +555,7 @@ main img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 100%; 
     }
     .contacto a {
         color: #fff;

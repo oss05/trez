@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
+    height: 100%;
     margin: 0px;
     font-family: 'Raleway', sans-serif;
 }
@@ -142,22 +143,22 @@ body {
 
 .groupinput>input {
     border-radius: 50px;
-    border: none;
-    background-color: #631514;
+    border: #5c5c60 solid 1px;
+    background-color: #fff;
     width: 100%;
     height: 2em;
-    color: #fff;
+    color: #000;
 }
 
 .groupinput img {
     width: 15px;
     height: 15px;
     margin-left: -24px;
-    filter: invert(100%);
+    filter: invert(40%);
 }
 
 .buscarylinks i {
-    color: #631514;
+    color: #5c5c60;
 }
 
 .containerSec {
@@ -171,6 +172,15 @@ body {
 /* ----------------termina header------------------------------ */
 
 /* ---------------------empieza main---------------- */
+/* .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    }
+    .footer, .push {
+    height: 4em;
+    } */
 
 .preventMain {
     /* border: solid 1px #00d0ff; */
@@ -190,6 +200,21 @@ main {
 .seccionIzq {
     /* border: solid 1px red; */
     width: 20%;
+}
+
+@keyframes ltr{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        opacity: 1;
+        }
+}
+
+.seccionIzq{
+    animation: ltr 1s forwards 0s ease;
 }
 
 .item1 {
@@ -234,6 +259,7 @@ main {
 .contenedorFotoIzq img {
     /* border: solid 1px purple; */
     width: 100%;
+    height: 15em;
 }
 
 .seccionCentro {
@@ -242,9 +268,31 @@ main {
     padding: 2em;
 }
 
+@keyframes dtu{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateY(0);
+        opacity: 1;
+        }
+}
+
+.seccionCentro{
+    animation: dtu 1s forwards 0s ease-in-out;
+}
+
 .title {
     color: #6c6968;
     font-size: 22px;
+}
+
+.subtitle{
+    color: #6c6968;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .textPrincipal {
@@ -254,6 +302,21 @@ main {
 .seccionDer {
     /* border: solid 1px goldenrod; */
     width: 20%;
+}
+
+@keyframes rtl{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        opacity: 1;
+        }
+}
+
+.seccionDer{
+    animation: rtl 1s forwards 0s ease;
 }
 
 .prueba {
@@ -318,6 +381,11 @@ main {
 }
 
 /* ------------------empieza responsive moviles-------------------- */
+@media (min-width:1700px) {
+    .footerWeb{
+    position: fixed;
+    bottom: 0;}
+}
 
 @media (max-width:700px) {
     .nav {
